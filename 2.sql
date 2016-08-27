@@ -1,0 +1,1 @@
+SELECT LastName || ', ' || FirstName AS Name, CustomerId, Country FROM Customer WHERE Country = 'Brazil'
