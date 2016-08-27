@@ -1,0 +1,1 @@
+SELECT Invoice.Total, Customer.LastName || ', ' || Customer.FirstName AS Customer, Employee.LastName || ',  ' || Employee.FirstName As 'Sales Agent', Invoice.BillingCountry AS 'Billing Country' FROM Invoice, Customer JOIN Employee ON Customer.SupportRepId == EmployeeId
