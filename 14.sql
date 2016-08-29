@@ -1,0 +1,1 @@
+SELECT DISTINCT BillingCountry AS 'Billing Country', COUNT(InvoiceId) AS '# of Invoices' FROM Invoice GROUP BY BillingCountry
