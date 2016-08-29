@@ -1,0 +1,1 @@
+SELECT COUNT(InvoiceLine.InvoiceLineId) AS '# of Line Items', Invoice.* FROM Invoice JOIN InvoiceLine ON Invoice.InvoiceId == InvoiceLine.InvoiceId GROUP BY InvoiceLine.InvoiceId
