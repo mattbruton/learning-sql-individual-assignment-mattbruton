@@ -1,0 +1,2 @@
+SELECT Employee.LastName || ', ' || Employee.FirstName AS 'Employee Name', COUNT(Customer.CustomerId) FROM Employee
+JOIN Customer ON Customer.SupportRepId == Employee.EmployeeId GROUP BY Employee.EmployeeId
